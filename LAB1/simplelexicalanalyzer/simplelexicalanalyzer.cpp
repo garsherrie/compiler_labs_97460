@@ -29,7 +29,7 @@ int main() {
 
 		// defining all the possible token types 
 		map<string, string> inputs{
-			{ "[0-9]+" ,   "integer" },{ "[_a-zA-Z]+" ,   "identifier" },{ "\\*|\\+|\\-|\\=",  "operator" },{ "[)}({]" , "special characters" },{"[,.:]", "punctuation symbol;"},{";","shows end of code"}
+			{ "[0-9]+" ,   "constant" },{ "[_a-zA-Z]+" ,   "identifier" },{ "\\*|\\+|\\-|\\=",  "operator" },{ "[)}({]" , "special characters" },{"[,.:]", "punctuation symbol;"},{"\\;|\\,","separator"}
 		};
 
 
@@ -58,7 +58,7 @@ int main() {
 		/*
 		y : identifier
 		= : operator
-		24 : integer
+		24 : constant
 		+ : operator
 		k : identifier
 		; : shows end of code
